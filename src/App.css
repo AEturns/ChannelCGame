@@ -1,0 +1,154 @@
+/* Container for centering the quiz box with background image */
+.quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./wallpaper.gif'); /* Add your background image here */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* The main question box with 3D effect */
+.question-box {
+  width: 500px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  perspective: 1000px;
+  transform: rotateX(10deg);
+  transition: transform 0.3s;
+}
+
+.question-box:hover {
+  transform: rotateX(0deg);
+}
+
+.question {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Boxes for answers */
+.answer-boxes {
+  display: flex;
+  flex-direction: column;
+}
+
+.answer {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.answer:hover {
+  background-color: #e55ccc;
+}
+
+
+/* Speaker button styling */
+.speaker-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #007bff;
+}
+
+.speaker-btn:hover {
+  color: #0056b3;
+}
+
+/* Container for the question and speaker */
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+/* Speaker button styling */
+.speaker-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #007bff;
+}
+
+.speaker-btn:hover {
+  color: #0056b3;
+}
+
+/* Container for the question and speaker */
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* Login container and box */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./login.png'); /* Add your background image here */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-box button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
